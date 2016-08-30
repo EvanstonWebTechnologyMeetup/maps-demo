@@ -1,0 +1,11 @@
+{
+  "name": "evanston-civic-apps",
+  "version": "0.0.1",
+  "author": "Evanston Web Technologies Meetup",
+  "private": true,
+  "dependencies": {
+    "express": "4.13.4",
+    "gulp-util": "3.0.7",
+    "gulp": "3.9.1"
+  }
+}

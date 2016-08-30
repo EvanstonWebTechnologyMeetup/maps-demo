@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Evanston Civic Apps</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Evanston Civic Apps</h1>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Google Map</div>
+        <div class="panel-body">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Places Search</div>
+        <div class="panel-body">
+          <div class="input-group">
+            <input id="address" type="text" class="form-control">
+            <span class="input-group-btn">
+              <button id="search-button" class="btn btn-default" type="button">Search</button>
+            </span>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+              </tr>
+            </thead>
+            <tbody id="search-table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>&copy; 2016 Evanston Web Technology Meetup</p>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCawuVhO_EhWZIkjB30Ku3vAzZT0zoU4Bg&libraries=places&callback=initMap" async defer></script>
+    <script src="app.js"></script>
+  </body>
+</html>
